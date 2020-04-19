@@ -1,0 +1,144 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+ul {
+    padding: 0px!important;
+}
+
+.menu-principal{
+    width: 100%;/*largura*/
+    background-color: #0c0909;/*cor de painel principal*/
+    height: 14%;/* sua altura*/
+}
+main{
+margin:0 auto;
+width: 980px;
+position: relative;
+}
+.logo{
+    float: left;
+    padding: 13px;/*sobe e desce logotipo  e altera 1 pouco a barra de pesquisa*/
+    width: 60%;
+    margin-left: -8%;
+
+}
+.redes-sociais ul li {
+    margin-left: 1.5px;/*distancia entre icones de redes sociais*/
+    display: inline-block;
+    float: right;/* é apenas para inverter a ordem de com aparece os ícones*/
+    list-style: none;
+
+}
+.redes-sociais{
+    width: 40%;/*largura dos icones das redes socias*/
+    float: right;
+}
+.header-2{
+background-color: ivory;
+width: 980px;
+margin: 0 auto;
+}
+.menu-urls{
+    height: 80px;/*é para a barrinha a cor qd apontar o rato*/
+    border-bottom: 5px solid #ebebd9;/*é para o tamanho e a cor da borda dos Home, Pages, Service, Local*/
+}
+.menu ul li{
+    display: inline-block;
+    color: #8b8b8b;
+    margin-left: 23px;
+    height: 65px;/*fica sublinhado e alinhado com o bordo*/
+}
+.menu ul li a:hover{/* é para qd colocarmos o rato nos menu's para mudar de cor*/
+color: #00bac6;/*cor que aparece por baixo dos separadores*/
+}
+.menu ul li:hover{
+    border-bottom: 5px solid #00bac6;/* coloca sublinhado com a msm cor e com 5px aumenta o traço*/
+}
+.menu ul li a {
+    color: #8b8b8b;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;/*coloca letra td maiscula*/
+
+}
+.menu{
+    width: 90%;/*é largira dos separadores*/
+    float: left;
+}
+.busca{
+    width: 210%;/*desloca o icone psq para direita/esquerda*/
+    float: right;
+    text-align:right;/*coloca a barra de psq para direita*/
+}
+.busca input{
+    background-image: url('../img/pesq.png');/*vai buscar imagem de pesquisa e coloca muitas imagens*/
+    background-repeat: no-repeat;/* ele tira as imagens reperidas*/
+    background-position: 95%;/*poderia ser tmb um right, mas pus 95% para ficar legal*/
+    margin-top: 28px;
+    height: 36px;
+    width: 190px;
+   padding: 13px;
+   border: 1px solid #19a50c;/* coloca o bordo com a cor*/
+}
+.col-100{
+    width: 100%;
+    float: left;
+    position: relative;
+}
+button.slick-prev{/* é para compor a seta esquerda*/
+    font-size: 0px;
+    z-index: 9;
+    border: none;
+    width: 36px;
+    height: 34;
+    background-color: transparent;
+    background-image: url('../img/esquerda.png');
+    left: 4%;/*para não ficar muito colado no separarador*/
+    position:absolute;
+    top:35%;
+}
+button.slick-next{/*formatcão de seta direita*/
+    font-size: 0px;
+    border: none;
+    z-index: 9;/*formtação da seta*/
+    width: 39px;
+    height: 34;
+    background-color: transparent;
+    background-image: url('../img/direita.png');
+    right: 4%;/*é para deslocar a seta */
+    position: absolute;
+    top: 35%;/*centraliz as setas*/
+}
+
+.slick-list{
+    width: 100%;
+}
+.slick.iniciazed{
+    overflow: hidden;
+}
+.slick-dots{
+    margin: 0 auto;
+    width: 50%;
+    position: absolute;
+    left: 45%;/*colocas os pontinhos no meio*/
+    top: 750px;/*deslocamento dos pontinhos acima/baixo*/
+
+}
+.slick-dots li button{
+    font-size: 0px;
+    border: 5px solid #d6d6d6;
+   width: 26px;
+   height: 26px;
+   background: transparent;
+   border-radius: 50%;/*fica redondinho*/
+   cursor: pointer;
+}
+.slick-dots li{
+    display:inline-block;
+    padding-left: 10px;/*distancia entre os pontinhos*/
+}
+li.slick-active button{
+    background:#1e00c6;/*bota tinta dentro dos pontinhos*/
+}
